@@ -1,25 +1,16 @@
-# Club of SkillForge
+# SkillForge Club Website
 
-> _Shaping Skills, Building Success_
+This repository contains the main landing page for the **SkillForge Club**. The site serves as a central hub, directing users to specific course pages and providing an overview of what the club offers.
 
-The Club of **SkillForge** is a community dedicated to helping you develop the skills you need to succeed in today's world. We offer a variety of free **IT classes, SAT preparation courses, and IELTS & Multilevel Masterclasses**.
+## Features
 
-## What We Offer
+- **Central Hub**: Links to SAT, IELTS, CEFR, and IT course pages.
+- **Responsive Design**: Accessible across all devices.
+- **User-Friendly Navigation**: Ensures easy access to all resources.
 
-- IT Classes: Learn in-demand IT skills from our experienced instructors.
-- SAT Preparation Courses: Get the edge you need on the SAT with our comprehensive preparation courses.
-- IELTS & Multilevel Masterclasses: Improve your English language skills with our IELTS & Multilevel Masterclasses.
+## How to Run Locally
 
-## Why Choose Us?
-
-**FREE CLASSES**: All of our classes are completely free to attend.
-- Experienced Instructors: Our instructors are passionate about helping you learn.
-- Supportive Community: We provide a supportive community where you can learn and grow with others.
-
-### Join Us Today!
-
-_We invite you to join the Club of SkillForge and start your journey to success._
-
-## **Contact Us**
-
-[Instagram](instagram.com/skillforge.club) | [Email](skillforgeclub@gmail.com)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/skillforgeclub/skillforge-website.git
+   ```
