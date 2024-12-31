@@ -503,3 +503,280 @@ p {
   margin-top: 15px;
   font-size: 0.9em;
 }
+
+@media (max-width: 430px) {
+  nav a {
+    font-size: 0.9rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+  }
+
+  .cards {
+    display: flex;
+    gap: 10px;
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+    transition: transform 10s ease-in-out; /* Optional, can smooth out sudden jumps */
+  }
+
+  .card {
+    min-width: 200px;
+    height: 200px;
+  }
+
+  .card img {
+    width: 50px;
+    height: 50px;
+    background: white;
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid #00274d;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #00274d;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    color: #074f97;
+  }
+
+  .team-section {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow section height to be determined by content */
+    min-height: 80vh; /* Set a minimum height to prevent it from being too short */
+    background-size: cover; /* Ensure background is responsive */
+  }
+
+  .team-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .team-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    margin: 0 auto; /* Center the content */
+  }
+
+  .team-card {
+    background-color: #ffffff;
+    border-radius: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    margin: 0 auto; /* Center cards */
+  }
+
+  .team-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .team-card h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #00274d;
+  }
+
+  .team-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 0;
+  }
+}
+
+/* Links Pages Section */
+@media (max-width: 430px) {
+  .Links-pages {
+    padding: 30px 20px; /* Adjust padding */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 80vh; /* Minimum height to prevent it from being too short */
+    background-size: cover; /* Ensure background scales well */
+  }
+
+  .Links-pages h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .Links-pages p {
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin-bottom: 20px;
+  }
+}
+
+/* About Us Section */
+@media (max-width: 430px) {
+  .about-us {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 80vh; /* Prevent being too short */
+    background-size: cover; /* Ensure background scales correctly */
+  }
+
+  .about-us h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .about-us p {
+    font-size: 1.5rem;
+    max-width: 1000px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer Section */
+@media (max-width: 430px) {
+  .footer {
+    padding: 20px; /* Adjust padding */
+    height: auto; /* Allow the footer to grow with content */
+    min-height: 40vh; /* Ensure footer has enough height for content */
+  }
+
+  .footer .content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center the content */
+    text-align: center;
+  }
+
+  .footer .motto {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .footer .contact,
+  .footer .social {
+    width: 100%; /* Ensure full width for contact and social sections */
+    margin-bottom: 20px;
+  }
+
+  .footer .social {
+    text-align: center;
+  }
+
+  .footer .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .footer .icons a {
+    font-size: 1.2em;
+  }
+
+  .footer .rights {
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+}
+/* CTA Section */
+@media (max-width: 430px) {
+  .cta-content {
+    padding: 30px 20px; /* Adjust padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: 50vh; /* Minimum height to prevent it from becoming too short */
+    text-align: center; /* Center content for better presentation */
+  }
+
+  .cta-content h1 {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 10px;
+  }
+
+  .cta-content p {
+    font-size: 1.5rem; /* Adjust paragraph size */
+    margin-bottom: 20px;
+  }
+
+  .social-links {
+    flex-direction: column; /* Stack social links vertically on small screens */
+    gap: 10px; /* Space out the buttons */
+    align-items: center; /* Center the buttons */
+  }
+
+  .social-button {
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 12px 25px; /* Adjust padding for better clickability */
+  }
+
+  .social-button i {
+    margin-right: 8px; /* Adjust icon spacing */
+  }
+}
+
+/* Footer Section */
+@media (max-width: 430px) {
+  .footer {
+    padding: 20px; /* Adjust padding for better spacing */
+    height: auto; /* Allow footer to adjust its height based on content */
+    min-height: 40vh; /* Minimum height for footer */
+    text-align: center; /* Center the content */
+  }
+
+  .footer .content {
+    flex-direction: column; /* Stack footer content vertically */
+    align-items: center; /* Center the content */
+    text-align: center;
+  }
+
+  .footer .motto {
+    font-size: 1.2em; /* Adjust motto font size */
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  .footer .contact,
+  .footer .social {
+    width: 100%; /* Ensure full width for contact and social sections */
+    margin-bottom: 20px; /* Space out the sections */
+  }
+
+  .footer .social {
+    text-align: center; /* Center social media links */
+  }
+
+  .footer .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space out the icons */
+    align-items: center; /* Center the icons */
+  }
+
+  .footer .icons a {
+    font-size: 1.5em; /* Increase icon size for better visibility */
+  }
+
+  .footer .contact {
+    text-align: center; /* Center the contact section */
+  }
+
+  .footer .contact p {
+    font-size: 1.2rem; /* Adjust font size */
+    margin: 0;
+  }
+
+  .footer .rights {
+    margin-top: 15px;
+    font-size: 0.9em;
+  }
+}
