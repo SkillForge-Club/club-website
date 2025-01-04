@@ -1,26 +1,23 @@
 const scrollers = document.querySelectorAll(".scroller");
 
-// If a user hasn't opted in for reduced motion, then we add the animation
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
+  initializeInfiniteScroll();
 }
 
-function addAnimation() {
+function initializeInfiniteScroll() {
   scrollers.forEach((scroller) => {
-    // add data-animated="true" to every `.scroller` on the page
-    scroller.setAttribute("data-animated", true);
-
-    // Make an array from the elements within `.scroller-inner`
     const scrollerInner = scroller.querySelector(".scroller__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
+    const items = Array.from(scrollerInner.children);
 
-    // For each item in the array, clone it
-    // add aria-hidden to it
-    // add it into the `.scroller-inner`
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
+    // Clone items to ensure seamless scrolling
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      scrollerInner.appendChild(clone);
     });
+
+    // Calculate total width for responsive animations
+    const totalWidth = items.reduce((acc, item) => acc + item.offsetWidth + 20, 0); // +20 for gap
+    scrollerInner.style.width = `${totalWidth * 2}px`; // Double for clones
   });
 }
